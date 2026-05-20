@@ -45,7 +45,7 @@ CREATE
 (n7)-[:LINK]->(n8);
 ```
 
-### Queries 
+#### Queries 
 
 Returns nodes a, b, c matching this connection pattern:
 ```
@@ -96,7 +96,7 @@ Hallucination levels may range from 1 beer to 5 tabs of ACID.
 But ACID is good for databases, so I hope it's OK. 
 
 
-### Queries 
+#### Queries 
 
 Get all cities: 
 ```js
