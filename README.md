@@ -77,17 +77,8 @@ But ACID is good for databases, so I hope it's OK.
 
 #### Queries 
 
-Get all cities: 
-```js
-db.cities.find()
-```
-
-Find in Europe (only print city name):
-```js
-db.cities.find({ continent : 'Europe' }, { _id:0, city : 1})
-```
-
-Return cities known for history or government: 
-```js
-db.cities.find({known_for: {$in : ['history', 'government']}}, { _id : 0, known_for : 1 })
-```
+| description | query | 
+|--|--| 
+| return all cities | `db.cities.find()` | 
+| Find in Europe (only print city name) | `db.cities.find({ continent : 'Europe' }, { _id:0, city : 1}) `| 
+| Return cities known for history or government | `db.cities.find({known_for: {$in : ['history', 'government']}}, { _id : 0, known_for : 1 })` | 
