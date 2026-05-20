@@ -1,0 +1,27 @@
+CREATE
+(n1:Node {name:1}), 
+(n2:Node {name:2}),
+(n3:Node {name:3}), 
+(n4:Node {name:4}),
+(n5:Node {name:5}), 
+(n6:Node {name:6}),
+(n7:Node {name:7}), 
+(n8:Node {name:8}),
+
+(n1)-[:LINK]->(n2),
+(n2)-[:LINK]->(n3),
+
+(n3)-[:LINK]->(n1),
+(n3)-[:LINK]->(n4),
+(n3)-[:LINK]->(n5),
+
+(n4)-[:LINK]->(n5),
+(n4)-[:LINK]->(n7),
+
+(n5)-[:LINK]->(n6),
+
+(n6)-[:LINK]->(n4),
+(n6)-[:LINK]->(n7),
+(n6)-[:LINK]->(n8),
+
+(n7)-[:LINK]->(n8);
